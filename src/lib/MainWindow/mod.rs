@@ -5,7 +5,7 @@ use gtk::glib;
 use gtk::Application;
 
 glib::wrapper! {
-    pub struct MainWindow(ObjectSubclass<imp::MainWindow>)
+    pub struct MainWindow(ObjectSubclass<imp::MainWindowImpl>)
         @extends gtk::ApplicationWindow, gtk::Window, gtk::Widget;
 }
 
